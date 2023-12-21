@@ -10,7 +10,7 @@
                     <li><a href="#">Characters</a></li>
                     <li><a href="{{ route('trains.index') }}">Train</a></li>
                     <li><a href="#">News</a></li>
-                    <li><a href="#">In partenza</a></li>
+                    <li><a href="{{route('leaving.index')}}">In partenza</a></li>
                 </ul>
             </div>
             <div class="col-2 ms-auto">

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\TrainController;
+use App\Http\Controllers\TrainDepartureController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,3 +20,4 @@ Route::get('/', function () {
 });
 
 Route::get('/trains', [TrainController::class, 'index'])->name('trains.index');
+Route::get('/trains/leaving', [TrainDepartureController::class, 'index'])->name('leaving.index');
