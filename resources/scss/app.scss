@@ -9,6 +9,62 @@ $fa-font-path: "../webfonts" !default;
 
 @import '~bootstrap/scss/bootstrap';
 
-h1 {
-    color: $text-color;
+#header{
+
+    li {
+      list-style: none;
+      padding: 20px;
+    }
+    
+    a {
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+      font-weight: bolder;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+    }
+    
+    a:hover {
+      color: #0282f9;
+    }
+    
+    img {
+      width: 70px;
+    }
+    
+    .bg-header{
+        background-color: #0282f9;
+        height: 40px;
+    }
+    
+    .header-up a{
+        color: white;
+        font-size: 0.6rem;
+        margin-bottom: 10px;
+        text-decoration: none;
+    }
+    
+    input {
+      border: none;
+      border-bottom: 2px solid #0282f9;
+      outline: none;
+      padding-right: 10px;
+       width: 100px ;
+    }
+    
+     button {
+    
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .search-form button i {
+      font-size: 1rem;
+      color: #000;
+    }
+
 }
+
+
