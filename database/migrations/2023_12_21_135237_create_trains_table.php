@@ -12,14 +12,14 @@ return new class() extends Migration {
      */
     public function up()
     {
-        Schema::create('trains_db', function (Blueprint $table) {
+        Schema::create('trains', function (Blueprint $table) {
             $table->id();
             $table->string('agency', 100);
             $table->string('departure_station', 50);
             $table->string('arrival_station', 50);
             $table->datetime('departure_time');
             $table->datetime('arrival_time');
-            $table->string('train_code', 16)->unsigned()->unique();
+            $table->string('train_code', 16)->unique();
             $table->tinyInteger('number_of_carriages')->unsigned();
             $table->boolean('isOnTime')->default(false);
             $table->boolean('isCancelled')->default(false);
@@ -34,6 +34,6 @@ return new class() extends Migration {
      */
     public function down()
     {
-        Schema::dropIfExists('trains_db');
+        Schema::dropIfExists('trains');
     }
 };
